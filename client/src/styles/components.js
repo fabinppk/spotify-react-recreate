@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
     flex: 1;
     display: flex;
+    height: calc(100% - 72px);
 `;
 
 export const Content = styled.div`
@@ -20,4 +21,5 @@ export const Content = styled.div`
     background-repeat: no-repeat;
     background-position: top;
     padding: 0 20px;
+    position: relative;
 `;

@@ -2,17 +2,17 @@ import styled from 'styled-components';
 import { Spinner } from '../Loading/styles';
 
 export const Container = styled.aside`
-    height: 100%;
     width: 200px;
+    height: 100%;
     background: #121212;
     color: #f2f2f2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+`;
 
-    > div {
-        padding: 25px;
-    }
+export const BlockUl = styled.div`
+    padding: 25px;
 `;
 
 export const Nav = styled.ul`
