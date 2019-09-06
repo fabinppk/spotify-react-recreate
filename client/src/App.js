@@ -2,7 +2,6 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import GlobalStyle from './styles/global';
-import './config/reactotron';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Player from './components/Player';
