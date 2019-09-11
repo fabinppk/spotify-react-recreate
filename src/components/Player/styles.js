@@ -45,6 +45,8 @@ export const Progress = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
+    max-width: 940px;
 `;
 
 export const Controls = styled.div`
@@ -61,7 +63,7 @@ export const Controls = styled.div`
 export const Time = styled.div`
     display: flex;
     align-items: center;
-
+    width: 100%;
     margin-top: 5px;
 
     span {
@@ -71,7 +73,7 @@ export const Time = styled.div`
 `;
 
 export const ProgressSlider = styled.div`
-    width: 650px;
+    width: 100%;
     margin: 0 15px;
 `;
 

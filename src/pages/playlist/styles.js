@@ -3,7 +3,9 @@ import styled, { css } from 'styled-components';
 import { Spinner } from '../../components/Loading/styles';
 
 export const Container = styled.div`
-    margin-top: 30px;
+    margin-top: 50px;
+    overflow: hidden;
+    height: 100%;
 
     ${Spinner} {
         height: 48px;
@@ -67,6 +69,11 @@ export const Header = styled.header`
             cursor: pointer;
         }
     }
+`;
+
+export const BlockSongList = styled.div`
+    overflow: auto;
+    height: calc(100% - 220px);
 `;
 
 export const SongList = styled.table`
