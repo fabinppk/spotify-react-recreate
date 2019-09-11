@@ -5,10 +5,10 @@ import sagas from './sagas';
 
 const middlewares = [];
 const sagaMonitor =
-    process.env.NODE_ENV === 'development' ? console.tron.createSagaMonitor() : null;
+    process.env.REACT_APP_NODE_ENV === 'development' ? console.tron.createSagaMonitor() : null;
 const sagaMiddleware = createSagaMiddleware({ sagaMonitor });
 const createAppropriateStore =
-    process.env.NODE_ENV === 'development' ? console.tron.createStore : createStore;
+    process.env.REACT_APP_NODE_ENV === 'development' ? console.tron.createStore : createStore;
 
 middlewares.push(sagaMiddleware);
 
