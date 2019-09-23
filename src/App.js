@@ -2,6 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import GlobalStyle from './styles/global';
+import Analytics from 'react-router-ga';
 import './config/reactotron';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
@@ -15,17 +16,19 @@ const App = () => (
     <Provider store={store}>
         <GlobalStyle />
         <BrowserRouter>
-            <Wrapper>
-                <Container>
-                    <Sidebar />
-                    <Content>
-                        <ErrorBox />
-                        <Header />
-                        <Routes />
-                    </Content>
-                </Container>
-                <Player />
-            </Wrapper>
+            <Analytics id="UA-48509443-12">
+                <Wrapper>
+                    <Container>
+                        <Sidebar />
+                        <Content>
+                            <ErrorBox />
+                            <Header />
+                            <Routes />
+                        </Content>
+                    </Container>
+                    <Player />
+                </Wrapper>
+            </Analytics>
         </BrowserRouter>
     </Provider>
 );
