@@ -18,6 +18,8 @@ const GlobalStyle = createGlobalStyle`
         text-rendering: optimizeLegibility !important;
         -webkit-font-smoothing: antialiased !important;
         font-family: 'Montserrat', sans-serif;
+        min-width: 1035px;
+        width: auto !important;
     }
 `;
 
